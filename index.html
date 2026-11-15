@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>SoLLM</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #04070c; color: #9fb4c8; overflow: hidden; }
+    #rook-loader { position: fixed; inset: 0; display: grid; place-items: center; font: 600 14px/1.4 system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; z-index: 9999; transition: opacity .6s; }
+    #rook-loader b { display: block; font-size: 42px; letter-spacing: .3em; color: #d8e6f3; margin-bottom: 14px; text-align: center; }
+    #rook-loader.gone { opacity: 0; pointer-events: none; }
+  </style>
+  <script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+</head>
+<body>
+  <div id="rook-loader"><div><b>SoLLM</b><span id="rook-loader-status">Waiting for SoLLM</span></div></div>
+  <div id="rook-page"></div>
+  <script src="rook-receiver.js"></script>
+</body>
+</html>
